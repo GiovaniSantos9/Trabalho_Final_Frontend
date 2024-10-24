@@ -1,0 +1,150 @@
+
+
+.recipes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #7e7e7e;
+  list-style: none;
+  border: none;
+  gap: 20px;
+  height: 20px;
+  padding: 12px 27px;
+  border-radius: 23px;
+  outline: none;
+  margin: 20px 0 40px 0;
+}
+
+.categories-container li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.categories-container li:hover {
+  color: #f01e3a;
+}
+
+.recipes-title {
+  text-align: center;
+}
+
+/* Container de cards */
+.meals-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilos dos cards */
+.meal-card {
+  background-color: #ffffff;
+  width: 270px;
+  height: 300px;
+  padding: 15px;
+  transition: transform 0.2s ease;
+  margin-top: 60px;
+  text-align: start;
+}
+
+.meal-card:hover {
+  transform: scale(1.02);
+}
+
+.meal-card h3{
+  margin: 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meal-image {
+  display: block;
+  margin: -50px auto 0 auto;
+  width: 95%;
+  height: 70%;
+}
+
+.meal-info {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.card_botton{
+  margin-top: 10px;
+  border-top: 1px solid #bbbbbbda ;
+}
+
+.card_botton i{
+  margin-top: 10px;
+  font-size: 25px;
+  color: #858585da;
+  cursor: pointer;
+}
+
+.card_botton i:hover{
+  color: #f01e3a;
+  transition: ease;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%; 
+  overflow-y: auto; 
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+.image-modal{
+  width: 200px;
+  border-radius: 2px;
+}
+
+

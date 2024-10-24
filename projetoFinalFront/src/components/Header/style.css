@@ -1,0 +1,50 @@
+.input {
+    background-color: #ffffff;
+    color: #7e7e7e;
+    border: none;
+    height: 20px;
+    width: 25rem;
+    padding: 12px;
+    border-radius: 23px;
+    outline: none;
+}
+
+header {
+    height: 250px;
+    padding: 1.5rem 0 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eeeeee;
+    background-image: url("../../assets/banner1-1920x828.jpg");
+    background-size:cover ;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+header img {
+    width: 200px;
+}
+
+.barra-de-pesquisa i {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.barra-de-pesquisa {
+    position: relative;
+    background-color: #ffffff;
+    padding: 1px;
+    border-radius: 23px;
+    color: #7e7e7e;
+}
+
+header h1 {
+    font-size: 45px;
+    color: #2c2c2c;
+}
