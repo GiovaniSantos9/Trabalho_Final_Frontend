@@ -1,13 +1,13 @@
 import './App.css'
-import Header from './components/Header'
 import Recipes from './components/Categories'
+import RecipeSearch from './components/RecipesSearch'
 
 function App() {
 
   return (
     <div className='AppContaine'>
       <div>
-        <Header />
+        <RecipeSearch/>
       </div>
       <div>
         <Recipes />

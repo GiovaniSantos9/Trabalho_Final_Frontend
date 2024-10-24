@@ -1,19 +1,34 @@
-import "./style.css"
+/* eslint-disable react/prop-types */
+import { useState } from "react";
+import "./style.css";
 
-function Header() {
+function Header({ onSearch }) {
+    const [ProcurarReceita, setProcurarReceita] = useState("");
+
+    const handleSearchChange = (event) => {
+        const value = event.target.value;
+        setProcurarReceita(value);
+        onSearch(value);  
+    };
+
     return (
-        <div>
-            <header className="header">
-                <div className="middle">
-                    <div className="barra-de-pesquisa">
-                        <i className="fas fa-search"></i>
-                        <input placeholder="Search Recipes" className="input" type="text" id="searchInput" />
-                    </div>
-                    <h1>Explore Recipes</h1>
+        <header className="header">
+            <div className="middle">
+                <div className="barra-de-pesquisa">
+                    <i className="fas fa-search"></i>
+                    <input
+                        placeholder="Search Recipes"
+                        className="input"
+                        type="text"
+                        value={ProcurarReceita}
+                        onChange={handleSearchChange} 
+                    />
                 </div>
-            </header>
-        </div>
-    )
+                <h1>Explore Recipes</h1>
+            </div>
+        </header>
+    );
 }
 
-export default Header
+export default Header;
+
